@@ -1,6 +1,6 @@
 <article class="listing">
   <a class="image {{if this.isWide "wide"}}"
-    onclick="REPLACE ME"
+    onclick={{action "toggleImageSize"}}
     role="button">
     <img src={{this.rental.image}} alt="">
     <small>View Larger</small>
