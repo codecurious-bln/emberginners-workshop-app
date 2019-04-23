@@ -1,2 +1,8 @@
 {{filterLabel}}
-{{yield}}
+{{input
+  value=this.value
+  key-up=REPLACEME
+  class="light"
+  placeholder="Filter By City"
+}}
+{{yield this.results}}
