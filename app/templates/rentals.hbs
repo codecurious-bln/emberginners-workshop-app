@@ -9,8 +9,8 @@
 
 <ListFilter as |filteredResults|>
   <div class="results">
-    {{! REPLACE ME }}
-      <RentalListing @rental={{REPLACEME}} />
-    {{! REPLACE ME }}
+    {{#each this.model as |rentalUnit|}}
+      <RentalListing @rental={{rentalUnit}} />
+    {{/each}}
   </div>
 </ListFilter>
