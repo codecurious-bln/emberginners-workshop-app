@@ -7,6 +7,10 @@
   {{/link-to}}
 </div>
 
-<ListFilter />
-
-<RentalListing @rental={{this.model}} />
+<ListFilter as |filteredResults|>
+  <div class="results">
+    {{! REPLACE ME }}
+      <RentalListing @rental={{REPLACEME}} />
+    {{! REPLACE ME }}
+  </div>
+</ListFilter>
