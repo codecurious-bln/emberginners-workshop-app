@@ -4,7 +4,7 @@ import { computed } from '@ember/object';
 export default Component.extend({
   classNames: ['list-filter'],
   value: 'all',
-  filterLabel: computed(/* REPLACE ME *//*, */ function() {
-    return `You have selected: ${this.valur}`;
+  filterLabel: computed('value', function() {
+    return `You have selected: ${this.value}`;
   }),
 });
