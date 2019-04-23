@@ -9,7 +9,7 @@
 
 <ListFilter @filter={{action "filterByCity"}} as |filteredResults|>
   <div class="results">
-    {{#each this.model as |rentalUnit|}}
+    {{#each filteredResults as |rentalUnit|}}
       <RentalListing @rental={{rentalUnit}} />
     {{/each}}
   </div>
